@@ -2,11 +2,19 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- open graph data facebook : start -->
+    <meta property="og:description" content="Docotel Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo">
+    <!-- open graph data : end -->
+
+    <!-- meta description : start -->
+    <meta name="description" content="Docotel Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo">
+    <!-- meta description : end -->
 
     <title>Hello, AMPs</title>
     <link rel="canonical" href="index.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    
+
     <!-- boilerplate css : start -->
     <style amp-boilerplate>
       body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
@@ -26,85 +34,119 @@
     <!-- custom css : end -->
 
     <!-- js amp : start -->
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <!-- js amp : end -->
 
   </head>
   <body class="home">
-    <!-- sidebar(mobile) : start -->
+    <!-- nav mobile (amp-sidebar) : start -->
     <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
       <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
       <nav>
         <section >
-          <h2 class="heading">About</h2>
+          <h2 class="heading">Home</h2>
         </section>
         <section >
-          <h2 class="heading">Docs</h2>
+          <h2 class="heading">
+            <a href="#home">
+              About Us
+            </a>
+          </h2>
         </section>
         <section >
-          <h2 class="heading">Contribute</h2>
+          <h2 class="heading">
+            <a href="#home">
+              Product & Service
+            </a>
+          </h2>
         </section>
         <section >
-          <h2 class="heading">news</h2>
+          <h2 class="heading">
+            <a href="#home">
+              Success Story
+            </a>
+          </h2>
         </section>
         <section >
-          <h2 class="heading">Support</h2>
+          <h2 class="heading">
+            <a href="#home">
+              Partners
+            </a>
+          </h2>
+        </section>
+        <section >
+          <h2 class="heading">
+            <a href="#home">
+              Carrers
+            </a>
+          </h2>
+        </section>
+        <section >
+          <h2 class="heading">
+            <a href="#home">
+              Contact
+            </a>
+          </h2>
         </section>
       </nav>
     </amp-sidebar>
-    <!-- sidebar(mobile) : end -->
-<header class="header fixed">
- <div class="container">
-  <div class="nav-container">
-    <div class="left-nav">
-      <a href="/" class="tab header-title"><span></span></a>
-    </div>
-    <div class="right alt">
-      <div class="tab">
-        <a href="#home">Home</a>
-      </div>
-      <div class="tab">
-        <a href="#home">About Us</a>
-      </div>
-      <div class="tab">
-        <a href="#home">Product & Service</a>
-      </div>
-      <div class="tab">
-        <a href="#home">Success Story</a>
-      </div>
-      <div class="tab">
-        <a href="#home">Partner</a>
-      </div>
-      <div class="tab">
-        <a href="#home">Carrer</a>
-      </div>
-      <div class="tab">
-        <a href="#home">Contact</a>
-      </div>
-    <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
-    </div>
-  </div>
-</div>
+    <!-- nav mobile (amp-sidebar) : end -->
 
-</header>
-  <div class="wrap">
-   <div class="content">
-    <section class="blade blade--hero hero">
-     <div class="container">
-      <div class="row">
-       <div class="twelve columns">
-        <div class="intro-container">
-         <h1>Partners</h1>
-         <p class="intro desktop-only">For many, reading on the mobile web is a slow, clunky and frustrating experience - but it doesn’t have to be that way. The Accelerated Mobile Pages (AMP) Project is an open source initiative that embodies the vision that publishers can create mobile optimized content once and have it load instantly everywhere.</p>
-         <p class="intro mobile-only">The Accelerated Mobile Pages (AMP) Project is an open initiative that embodies the vision that publishers can create mobile optimized content once and have it load instantly everywhere.</p>
+    <!-- nav desktop (.header) : end -->
+    <header class="header fixed">
+      <div class="container">
+        <div class="nav-container">
+          <div class="left-nav">
+            <a href="/" class="tab header-title"><span></span></a>
+          </div>
+          <div class="right alt">
+            <div class="tab">
+              <a href="#home">Home</a>
+            </div>
+            <div class="tab">
+              <a href="#home">About Us</a>
+            </div>
+            <div class="tab">
+              <a href="#home">Product & Service</a>
+            </div>
+            <div class="tab">
+              <a href="#home">Success Story</a>
+            </div>
+            <div class="tab">
+              <a href="#home">Partners</a>
+            </div>
+            <div class="tab">
+              <a href="#home">Carrers</a>
+            </div>
+            <div class="tab">
+              <a href="#home">Contact</a>
+            </div>
+          <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
+          </div>
         </div>
-       </div>
       </div>
-     </div>
-    </section>
-   </div>
-  </div>
+    </header>
+    <!-- content : start -->
+    <div class="wrap">
+      <div class="content">
+        <!-- banner tag paragraf : start -->
+        <section class="blade blade--hero hero">
+          <div class="container">
+            <div class="row">
+              <div class="twelve columns">
+                <div class="intro-container">
+                  <h1>Partners</h1>
+                  <p class="intro desktop-only">Lorem Desktop ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatibus ipsa amet architecto! Necessitatibus, eaque velit, officiis molestiae delectus officia aspernatur inventore. Iste eum veritatis optio reiciendis ab officia veniam?.</p>
+                  <p class="intro mobile-only">Lorem Mobile ipsum dolor sit amet, consectetur adipisicing elit. Aut distinctio deserunt aliquid laborum placeat, nesciunt est error minima</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <!-- banner tag paragraf : end-->
+      </div>
+    </div>
+    <!-- content : end -->
  </body>
 </html>

@@ -1,4 +1,4 @@
-   .desktop-up,
+.desktop-up,
 .desktop-only {
   display: none;
   visibility: hidden
@@ -163,23 +163,7 @@ a.button {
   display: block;
   text-align: center
 }
-blockquote {
-  color: #797c82;
-  border-left: 4px solid #f5f5f5;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic
-}
-blockquote>:last-child {
-  margin-bottom: 0
-}
-.rtl blockquote {
-  border-left: 0;
-  border-right: 4px solid #f5f5f5;
-  padding-left: 0;
-  padding-right: 15px
-}
+
 ul li,
 ol li {
   color: #424242;
@@ -222,17 +206,11 @@ figure {
   -webkit-margin-start: 0;
   -webkit-margin-end: 0
 }
-.rtl figure {
-  direction: ltr
-}
 .container {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 1000px;
   padding: 0 20px
-}
-.container.md {
-  max-width: 800px
 }
 .wrap {
   margin: 0 auto
@@ -248,75 +226,11 @@ figure {
 .align-right {
   text-align: right
 }
-@media only screen and (max-width: 956px) {
-  .margin-bottom-mobile:last-child,
-  .margin-bottom-mobile {
-    margin-bottom: 40px
-  }
-}
-.margin-bottom-sm:last-child,
-.margin-bottom-sm {
-  margin-bottom: 40px
-}
-.margin-bottom:last-child,
-.margin-bottom {
-  margin-bottom: 60px
-}
-@media only screen and (max-width: 956px) {
-  .margin-bottom:last-child.desktop,
-  .margin-bottom.desktop {
-    margin-bottom: inherit
-  }
-}
+
 .hidden {
   display: none
 }
-.go-button {
-  display: inline-block;
-  background-color: #0379C4;
-  padding: 0.8em 1em;
-  border: 0;
-  border-radius: 4px;
-  color: #fff;
-  font-family: Roboto, verdana, arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
-}
-.go-button:hover,
-.go-button:focus {
-  background-color: #0373ba;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4)
-}
-.go-button:hover {
-  text-decoration: none
-}
-.go-button--alt {
-  background-color: #fff;
-  color: #0379C4
-}
-.go-button--alt:hover,
-.go-button--alt:focus {
-  background-color: #fafafa
-}
-@media only screen and (min-width: 1025px) {
-  .desaturate {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: .7;
-    -webkit-transition: all .4s ease-out;
-    transition: all .4s ease-out
-  }
-  .desaturate:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    opacity: 1
-  }
-}
+
 .center-content {
   text-align: center
 }
@@ -484,74 +398,8 @@ figure {
   color: inherit;
   text-decoration: none
 }
-/*.header div.tab>a:after {
-  display: inline-block;
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid currentColor;
-  margin-left: 5px;
-  padding-bottom: 2px
-}*/
-.header div.tab>ul {
-  list-style: none;
-  position: absolute;
-  min-width: 136px;
-  top: 54px;
-  left: -8px;
-  text-align: left;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transform: translate(0, 10px);
-  transform: translate(0, 10px);
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
-  z-index: 1;
-  will-change: transform;
-  background: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
-}
-.header div.tab>ul li {
-  padding: 6px 14px;
-  box-sizing: border-box;
-  font-weight: 400;
-  font-size: inherit
-}
-.header div.tab>ul li:hover {
-  background: #f0f0f0
-}
-.header div.tab>ul li.external {
-  padding-right: 26px
-}
-.header div.tab>ul li.external a {
-  background-size: 12px 12px;
-  background-repeat: no-repeat;
-  background-position: right 2px;
-  padding-right: 16px
-}
-.header div.tab>ul li.external:hover a {
-  /*background-image: url(/static/img/ic_open_in_new_black.svg)*/
-}
-.header div.tab:hover>ul {
-  opacity: 1;
-  pointer-events: all;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0)
-}
-.rtl header .left-nav .header-title {
-  padding: 40px 60px 40px 40px;
-  background-position: center right
-}
-@media only screen and (max-width: 956px) {
-  .rtl header .left-nav .header-title {
-    width: auto
-  }
-}
-.rtl header .alt.right {
-  text-align: left
-}
+
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
