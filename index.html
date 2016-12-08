@@ -1,0 +1,110 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="index.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+    <!-- boilerplate css : start -->
+    <style amp-boilerplate>
+      body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    </style>
+
+    <noscript>
+      <style amp-boilerplate>
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+      </style>
+    </noscript>
+    <!-- boilerplate css : end -->
+
+    <!-- custom css : start -->
+    <style amp-custom>
+      @import "assets/css/style.css";
+    </style>
+    <!-- custom css : end -->
+
+    <!-- js amp : start -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <!-- js amp : end -->
+
+  </head>
+  <body class="home">
+    <!-- sidebar(mobile) : start -->
+    <amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+      <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
+      <nav>
+        <section >
+          <h2 class="heading">About</h2>
+        </section>
+        <section >
+          <h2 class="heading">Docs</h2>
+        </section>
+        <section >
+          <h2 class="heading">Contribute</h2>
+        </section>
+        <section >
+          <h2 class="heading">news</h2>
+        </section>
+        <section >
+          <h2 class="heading">Support</h2>
+        </section>
+      </nav>
+    </amp-sidebar>
+    <!-- sidebar(mobile) : end -->
+<header class="header fixed">
+ <div class="container">
+  <div class="nav-container">
+    <div class="left-nav">
+      <a href="/" class="tab header-title"><span></span></a>
+    </div>
+    <div class="right alt">
+      <div class="tab">
+        <a href="#home">Home</a>
+      </div>
+      <div class="tab">
+        <a href="#home">About Us</a>
+      </div>
+      <div class="tab">
+        <a href="#home">Product & Service</a>
+      </div>
+      <div class="tab">
+        <a href="#home">Success Story</a>
+      </div>
+      <div class="tab">
+        <a href="#home">Partner</a>
+      </div>
+      <div class="tab">
+        <a href="#home">Carrer</a>
+      </div>
+      <div class="tab">
+        <a href="#home">Contact</a>
+      </div>
+    <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
+    </div>
+  </div>
+</div>
+
+</header>
+  <div class="wrap">
+   <div class="content">
+    <section class="blade blade--hero hero">
+     <div class="container">
+      <div class="row">
+       <div class="twelve columns">
+        <div class="intro-container">
+         <h1>Partners</h1>
+         <p class="intro desktop-only">For many, reading on the mobile web is a slow, clunky and frustrating experience - but it doesn’t have to be that way. The Accelerated Mobile Pages (AMP) Project is an open source initiative that embodies the vision that publishers can create mobile optimized content once and have it load instantly everywhere.</p>
+         <p class="intro mobile-only">The Accelerated Mobile Pages (AMP) Project is an open initiative that embodies the vision that publishers can create mobile optimized content once and have it load instantly everywhere.</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+   </div>
+  </div>
+ </body>
+</html>
